@@ -106,7 +106,6 @@
 			children = (
 				7F3F2A4228EAC3A600819A6E /* OmusubiKororinApp.swift */,
 				7F3F2A4428EAC3A600819A6E /* ContentView.swift */,
-				7F3F2A7428EACCE400819A6E /* SourceData */,
 				7F3F2A7528EACD1100819A6E /* UIView */,
 				7F3F2A7628EACD4A00819A6E /* Controller */,
 				7F3F2A4628EAC3A700819A6E /* Assets.xcassets */,
@@ -138,13 +137,6 @@
 				7F3F2A5F28EAC3A700819A6E /* OmusubiKororinUITestsLaunchTests.swift */,
 			);
 			path = OmusubiKororinUITests;
-			sourceTree = "<group>";
-		};
-		7F3F2A7428EACCE400819A6E /* SourceData */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SourceData;
 			sourceTree = "<group>";
 		};
 		7F3F2A7528EACD1100819A6E /* UIView */ = {
