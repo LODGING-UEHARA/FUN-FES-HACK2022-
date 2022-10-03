@@ -7,3 +7,13 @@
 
 import SwiftUI
 import UIKit
+
+struct IkuseiTabView: View {
+    var body: some View {
+        VStack {
+            Text("育成").font(.system(size: 20))
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .ignoresSafeArea()
+    }
+}

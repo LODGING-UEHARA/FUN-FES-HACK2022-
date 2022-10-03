@@ -7,3 +7,13 @@
 
 import SwiftUI
 import UIKit
+
+struct BattleTabView: View {
+    var body: some View {
+        VStack {
+            Text("バトル").font(.system(size: 20))
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .ignoresSafeArea()
+    }
+}
