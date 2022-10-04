@@ -11,7 +11,7 @@ import UIKit
 struct BattleTabView: View {
     var body: some View {
         VStack {
-            Text("バトル").font(.system(size: 20))
+            Text("バトル").font(.system(size: 50))
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .ignoresSafeArea()

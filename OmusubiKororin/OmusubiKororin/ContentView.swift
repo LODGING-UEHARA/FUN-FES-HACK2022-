@@ -4,28 +4,33 @@
 //
 //  Created by 児玉拓海 on 2022/10/03.
 //
-
+import Foundation
 import SwiftUI
 
 struct ContentView: View {
-    @State var selectTab = 1
+    @StateObject var locationViewModel = LocationViewModel()
     
     var body: some View {
-        TabView(selection: $selectTab) {
-            IkuseiTabView().tabItem{Text("育成")}.tag(1)
-            BattleTabView().tabItem{Text("バトル")}.tag(2)
-            RankingTabView().tabItem{Text("ランキング")}.tag(3)
-            
+        NavigationView{
+            NavigationLink(destination:GameMain()){
+                HStack(alignment: .bottom) {
+                    //Image
+                    Text("Title")
+                    }
+                }
+            }
+            .navigationBarHidden(true)
+            .navigationBarBackButtonHidden(true)
         }
-    }
 }
+
+
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-        IkuseiTabView()
-        BattleTabView()
-        RankingTabView()
+        GameMain()
     }
 }
 

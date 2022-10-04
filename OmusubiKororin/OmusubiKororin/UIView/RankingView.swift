@@ -11,7 +11,7 @@ import UIKit
 struct RankingTabView: View {
     var body: some View {
         VStack {
-            Text("ランキング").font(.system(size: 20))
+            Text("ランキング").font(.system(size: 50))
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .ignoresSafeArea()
