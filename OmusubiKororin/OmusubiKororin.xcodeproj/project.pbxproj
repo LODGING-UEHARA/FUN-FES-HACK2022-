@@ -7,10 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0156C9A9947225BEF791D9DF /* Pods_OmusubiKororin_OmusubiKororinUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F199ADAAD1C8C989C46E469C /* Pods_OmusubiKororin_OmusubiKororinUITests.framework */; };
+		0CF53EAC2BCED9CB61404327 /* Pods_OmusubiKororin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4FFBFD54DEFD4AD3078FF5 /* Pods_OmusubiKororin.framework */; };
+		7D8335C4CA5E6956792336A5 /* Pods_OmusubiKororinTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792FF525ED0596B308052876 /* Pods_OmusubiKororinTests.framework */; };
 		7F236E4E28EBE7AE00391C8D /* GameMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F236E4D28EBE7AE00391C8D /* GameMain.swift */; };
 		7F236E5128EBFAF000391C8D /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F236E5028EBFAF000391C8D /* LocationViewModel.swift */; };
 		7F236E5628EC032400391C8D /* RequestLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F236E5528EC032400391C8D /* RequestLocationView.swift */; };
 		7F236E5828EC038E00391C8D /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F236E5728EC038E00391C8D /* ErrorView.swift */; };
+		7F236E5E28ED35A500391C8D /* GifImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F236E5D28ED35A500391C8D /* GifImage.swift */; };
+		7F236E9C28EDF03A00391C8D /* YAMAMITI.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7F236E9B28EDF03A00391C8D /* YAMAMITI.gif */; };
+		7F236EA028EE030E00391C8D /* onigiri01.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7F236E9F28EE030E00391C8D /* onigiri01.gif */; };
 		7F3F2A4328EAC3A600819A6E /* OmusubiKororinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3F2A4228EAC3A600819A6E /* OmusubiKororinApp.swift */; };
 		7F3F2A4528EAC3A600819A6E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3F2A4428EAC3A600819A6E /* ContentView.swift */; };
 		7F3F2A4728EAC3A700819A6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F3F2A4628EAC3A700819A6E /* Assets.xcassets */; };
@@ -43,11 +49,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4CFE98F485BF232954A317C0 /* Pods-OmusubiKororin-OmusubiKororinUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmusubiKororin-OmusubiKororinUITests.debug.xcconfig"; path = "Target Support Files/Pods-OmusubiKororin-OmusubiKororinUITests/Pods-OmusubiKororin-OmusubiKororinUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		59246D23DBF654C5FD294D25 /* Pods-OmusubiKororin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmusubiKororin.release.xcconfig"; path = "Target Support Files/Pods-OmusubiKororin/Pods-OmusubiKororin.release.xcconfig"; sourceTree = "<group>"; };
+		66B8041DA5BD28936E496F1A /* Pods-OmusubiKororinTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmusubiKororinTests.release.xcconfig"; path = "Target Support Files/Pods-OmusubiKororinTests/Pods-OmusubiKororinTests.release.xcconfig"; sourceTree = "<group>"; };
+		792FF525ED0596B308052876 /* Pods_OmusubiKororinTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OmusubiKororinTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DDED61437F135B7BB06F06B /* Pods-OmusubiKororin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmusubiKororin.debug.xcconfig"; path = "Target Support Files/Pods-OmusubiKororin/Pods-OmusubiKororin.debug.xcconfig"; sourceTree = "<group>"; };
 		7F236E4D28EBE7AE00391C8D /* GameMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMain.swift; sourceTree = "<group>"; };
 		7F236E4F28EBEFFA00391C8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		7F236E5028EBFAF000391C8D /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
 		7F236E5528EC032400391C8D /* RequestLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestLocationView.swift; sourceTree = "<group>"; };
 		7F236E5728EC038E00391C8D /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		7F236E5D28ED35A500391C8D /* GifImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifImage.swift; sourceTree = "<group>"; };
+		7F236E9B28EDF03A00391C8D /* YAMAMITI.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = YAMAMITI.gif; sourceTree = "<group>"; };
+		7F236E9F28EE030E00391C8D /* onigiri01.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = onigiri01.gif; path = ../../../../../onigiri01.gif; sourceTree = "<group>"; };
 		7F3F2A3F28EAC3A600819A6E /* OmusubiKororin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OmusubiKororin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F3F2A4228EAC3A600819A6E /* OmusubiKororinApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmusubiKororinApp.swift; sourceTree = "<group>"; };
 		7F3F2A4428EAC3A600819A6E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -63,6 +77,10 @@
 		7F3F2A7028EACC1600819A6E /* BattleUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleUIView.swift; sourceTree = "<group>"; };
 		7F3F2A7228EACC2400819A6E /* IkuseiUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IkuseiUIView.swift; sourceTree = "<group>"; };
 		7F3F2A7728EAD17D00819A6E /* RankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingView.swift; sourceTree = "<group>"; };
+		9B4FFBFD54DEFD4AD3078FF5 /* Pods_OmusubiKororin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OmusubiKororin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA5259862F9380CCFC4B6889 /* Pods-OmusubiKororin-OmusubiKororinUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmusubiKororin-OmusubiKororinUITests.release.xcconfig"; path = "Target Support Files/Pods-OmusubiKororin-OmusubiKororinUITests/Pods-OmusubiKororin-OmusubiKororinUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C2E9F8CE7BBF7EC92E6DE6CD /* Pods-OmusubiKororinTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmusubiKororinTests.debug.xcconfig"; path = "Target Support Files/Pods-OmusubiKororinTests/Pods-OmusubiKororinTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F199ADAAD1C8C989C46E469C /* Pods_OmusubiKororin_OmusubiKororinUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OmusubiKororin_OmusubiKororinUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CF53EAC2BCED9CB61404327 /* Pods_OmusubiKororin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D8335C4CA5E6956792336A5 /* Pods_OmusubiKororinTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,20 +104,61 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0156C9A9947225BEF791D9DF /* Pods_OmusubiKororin_OmusubiKororinUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1AD6DA602737B2AB140F2780 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7DDED61437F135B7BB06F06B /* Pods-OmusubiKororin.debug.xcconfig */,
+				59246D23DBF654C5FD294D25 /* Pods-OmusubiKororin.release.xcconfig */,
+				4CFE98F485BF232954A317C0 /* Pods-OmusubiKororin-OmusubiKororinUITests.debug.xcconfig */,
+				BA5259862F9380CCFC4B6889 /* Pods-OmusubiKororin-OmusubiKororinUITests.release.xcconfig */,
+				C2E9F8CE7BBF7EC92E6DE6CD /* Pods-OmusubiKororinTests.debug.xcconfig */,
+				66B8041DA5BD28936E496F1A /* Pods-OmusubiKororinTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		521A7AFFB9C4492D47A4CEA1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B4FFBFD54DEFD4AD3078FF5 /* Pods_OmusubiKororin.framework */,
+				F199ADAAD1C8C989C46E469C /* Pods_OmusubiKororin_OmusubiKororinUITests.framework */,
+				792FF525ED0596B308052876 /* Pods_OmusubiKororinTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7F236E5428EBFB1F00391C8D /* LocationView */ = {
 			isa = PBXGroup;
 			children = (
 				7F236E5028EBFAF000391C8D /* LocationViewModel.swift */,
-				7F236E5528EC032400391C8D /* RequestLocationView.swift */,
-				7F236E5728EC038E00391C8D /* ErrorView.swift */,
 			);
 			path = LocationView;
+			sourceTree = "<group>";
+		};
+		7F236E9D28EE01FA00391C8D /* GIF */ = {
+			isa = PBXGroup;
+			children = (
+				7F236E9F28EE030E00391C8D /* onigiri01.gif */,
+				7F236E9B28EDF03A00391C8D /* YAMAMITI.gif */,
+			);
+			path = GIF;
+			sourceTree = "<group>";
+		};
+		7F236E9E28EE023800391C8D /* NOT */ = {
+			isa = PBXGroup;
+			children = (
+				7F236E5D28ED35A500391C8D /* GifImage.swift */,
+				7F236E5728EC038E00391C8D /* ErrorView.swift */,
+				7F236E5528EC032400391C8D /* RequestLocationView.swift */,
+			);
+			path = NOT;
 			sourceTree = "<group>";
 		};
 		7F3F2A3628EAC3A600819A6E = {
@@ -107,6 +168,8 @@
 				7F3F2A5228EAC3A700819A6E /* OmusubiKororinTests */,
 				7F3F2A5C28EAC3A700819A6E /* OmusubiKororinUITests */,
 				7F3F2A4028EAC3A600819A6E /* Products */,
+				1AD6DA602737B2AB140F2780 /* Pods */,
+				521A7AFFB9C4492D47A4CEA1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,12 +187,14 @@
 			isa = PBXGroup;
 			children = (
 				7F236E5428EBFB1F00391C8D /* LocationView */,
+				7F236E9D28EE01FA00391C8D /* GIF */,
 				7F3F2A7528EACD1100819A6E /* UIView */,
 				7F3F2A4228EAC3A600819A6E /* OmusubiKororinApp.swift */,
 				7F3F2A4428EAC3A600819A6E /* ContentView.swift */,
 				7F236E4D28EBE7AE00391C8D /* GameMain.swift */,
 				7F3F2A4628EAC3A700819A6E /* Assets.xcassets */,
 				7F236E4F28EBEFFA00391C8D /* Info.plist */,
+				7F236E9E28EE023800391C8D /* NOT */,
 				7F3F2A4828EAC3A700819A6E /* Preview Content */,
 			);
 			path = OmusubiKororin;
@@ -187,9 +252,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7F3F2A6328EAC3A700819A6E /* Build configuration list for PBXNativeTarget "OmusubiKororin" */;
 			buildPhases = (
+				2048139A3EE371A9A57FDDED /* [CP] Check Pods Manifest.lock */,
 				7F3F2A3B28EAC3A600819A6E /* Sources */,
 				7F3F2A3C28EAC3A600819A6E /* Frameworks */,
 				7F3F2A3D28EAC3A600819A6E /* Resources */,
+				BBCC75A04BC8657E136CAD22 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -204,6 +271,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7F3F2A6628EAC3A700819A6E /* Build configuration list for PBXNativeTarget "OmusubiKororinTests" */;
 			buildPhases = (
+				CD29AFADB5BB6C6D8CB42CA8 /* [CP] Check Pods Manifest.lock */,
 				7F3F2A4B28EAC3A700819A6E /* Sources */,
 				7F3F2A4C28EAC3A700819A6E /* Frameworks */,
 				7F3F2A4D28EAC3A700819A6E /* Resources */,
@@ -222,9 +290,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7F3F2A6928EAC3A700819A6E /* Build configuration list for PBXNativeTarget "OmusubiKororinUITests" */;
 			buildPhases = (
+				873CFE71E4FA4AEEF43588B0 /* [CP] Check Pods Manifest.lock */,
 				7F3F2A5528EAC3A700819A6E /* Sources */,
 				7F3F2A5628EAC3A700819A6E /* Frameworks */,
 				7F3F2A5728EAC3A700819A6E /* Resources */,
+				C5560994027907DAA44A44E9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -285,7 +355,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F3F2A4A28EAC3A700819A6E /* Preview Assets.xcassets in Resources */,
+				7F236E9C28EDF03A00391C8D /* YAMAMITI.gif in Resources */,
 				7F3F2A4728EAC3A700819A6E /* Assets.xcassets in Resources */,
+				7F236EA028EE030E00391C8D /* onigiri01.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +377,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2048139A3EE371A9A57FDDED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OmusubiKororin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		873CFE71E4FA4AEEF43588B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OmusubiKororin-OmusubiKororinUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBCC75A04BC8657E136CAD22 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OmusubiKororin/Pods-OmusubiKororin-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OmusubiKororin/Pods-OmusubiKororin-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OmusubiKororin/Pods-OmusubiKororin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5560994027907DAA44A44E9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OmusubiKororin-OmusubiKororinUITests/Pods-OmusubiKororin-OmusubiKororinUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OmusubiKororin-OmusubiKororinUITests/Pods-OmusubiKororin-OmusubiKororinUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OmusubiKororin-OmusubiKororinUITests/Pods-OmusubiKororin-OmusubiKororinUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD29AFADB5BB6C6D8CB42CA8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OmusubiKororinTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7F3F2A3B28EAC3A600819A6E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -312,6 +487,7 @@
 			files = (
 				7F236E4E28EBE7AE00391C8D /* GameMain.swift in Sources */,
 				7F236E5628EC032400391C8D /* RequestLocationView.swift in Sources */,
+				7F236E5E28ED35A500391C8D /* GifImage.swift in Sources */,
 				7F3F2A7828EAD17D00819A6E /* RankingView.swift in Sources */,
 				7F3F2A7328EACC2400819A6E /* IkuseiUIView.swift in Sources */,
 				7F3F2A4528EAC3A600819A6E /* ContentView.swift in Sources */,
@@ -473,6 +649,7 @@
 		};
 		7F3F2A6428EAC3A700819A6E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DDED61437F135B7BB06F06B /* Pods-OmusubiKororin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -483,12 +660,16 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OmusubiKororin/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "オムクラ";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=iphoneos*]" = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -504,6 +685,7 @@
 		};
 		7F3F2A6528EAC3A700819A6E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59246D23DBF654C5FD294D25 /* Pods-OmusubiKororin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -514,12 +696,15 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OmusubiKororin/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "オムクラ";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -535,6 +720,7 @@
 		};
 		7F3F2A6728EAC3A700819A6E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2E9F8CE7BBF7EC92E6DE6CD /* Pods-OmusubiKororinTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -555,6 +741,7 @@
 		};
 		7F3F2A6828EAC3A700819A6E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66B8041DA5BD28936E496F1A /* Pods-OmusubiKororinTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -575,6 +762,7 @@
 		};
 		7F3F2A6A28EAC3A700819A6E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CFE98F485BF232954A317C0 /* Pods-OmusubiKororin-OmusubiKororinUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -593,6 +781,7 @@
 		};
 		7F3F2A6B28EAC3A700819A6E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA5259862F9380CCFC4B6889 /* Pods-OmusubiKororin-OmusubiKororinUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

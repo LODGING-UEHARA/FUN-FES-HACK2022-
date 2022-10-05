@@ -8,18 +8,25 @@
 import SwiftUI
 import CoreLocation
 import UIKit
+import SSSwiftUIGIFView
 
 struct IkuseiTabView: View {
     @EnvironmentObject var locationViewModel: LocationViewModel
-    
+    @State private var isScrollDisabled = false
     var body: some View {
-        VStack {
-            Text("標高" + String(altitude ?? 0)).font(.system(size: 20))
+        ZStack {
+            SwiftUIGIFPlayerView(gifName: "YAMAMITI")
+            SwiftUIGIFPlayerView(gifName: "onigiri01")
+                .frame(width: 300, height: 300)
+            Text("標高" + String(altitude ?? 0))
+                .font(.system(size: 30))
+                .offset(x:0 ,y:-300)
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        //.frame(maxWidth: .infinity, maxHeight: .infinity)
         .ignoresSafeArea()
         .navigationBarHidden(true)
-        .navigationBarBackButtonHidden(true)
+        //.navigationBarBackButtonHidden(true)
+        
     }
     
     var altitude: CLLocationDistance? {
