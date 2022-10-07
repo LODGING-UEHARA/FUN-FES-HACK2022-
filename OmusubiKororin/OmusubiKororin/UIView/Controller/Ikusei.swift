@@ -63,7 +63,7 @@ struct LimitView: View {
     }
 }
 
-struct OmusubiUIView: View {
+struct HyoukoUIView: View {
     
     var body: some View {
         ZStack{
@@ -75,27 +75,71 @@ struct OmusubiUIView: View {
             Text("登った高さ：")
                 .font(.system(size: 20))
                 .fontWeight(.bold)
-//                .foregroundColor(Color.black)
+            //                .foregroundColor(Color.black)
                 .multilineTextAlignment(.leading)
                 .offset(x: TextX1, y: HyokouY)
             Text("m")
                 .font(.system(size: 22))
                 .fontWeight(.bold)
-//                .foregroundColor(Color.black)
+            //                .foregroundColor(Color.black)
                 .multilineTextAlignment(.trailing)
                 .offset(x: TextX3, y:HyokouY)
-            
+        }
+    }
+}
+
+struct IkuseiOmuUIView: View {
+    @State var showingPopUp = false
+    
+    var body: some View {
+        ZStack{
             //ここから育成中のおむすびボタン
             Button(action: {
-                print("鬼斬り")
-            }){
+                withAnimation {
+                    showingPopUp = true
+                }
+            }, label: {
                 Image("onigiri00")
                     .resizable()
                     .background(Color(red: 0.55, green: 0.799, blue: 0.978))
                     .frame(width: OIkuseiWH, height: OIkuseiWH)
                     .cornerRadius(allConerSize)
+            })
+                .offset(x: OIkuseiX, y: OIkuseiY)
+            
+            
+            if showingPopUp {
+                IkuseiOmuPopupView(isPresent: $showingPopUp)
             }
-            .offset(x: OIkuseiX, y: OIkuseiY)
         }
+    }
+}
+
+struct IkuseiOmuPopupView: View {
+    @Binding var isPresent: Bool
+    
+    public var RectW:CGFloat = 350
+    public var RectH:CGFloat = 600
+
+    public var allConerSize:CGFloat = 5
+    
+    var body: some View {
+        ZStack {
+            RoundedRectangle(cornerSize: .init(width: allConerSize, height: allConerSize))
+                .fill(Color.white)
+                .frame(width: RectW, height: RectH, alignment: .center)
+                .offset(y:105)
+            Button(action: {
+                withAnimation {
+                    isPresent = false
+                }
+            }, label: {
+                Text("Close")
+            })
+        }
+//        .frame(width: 280, height: 430, alignment: .center)
+        .padding()
+//        .background(Color.white)
+        .cornerRadius(12)
     }
 }

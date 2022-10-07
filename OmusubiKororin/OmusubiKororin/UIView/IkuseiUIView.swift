@@ -50,8 +50,8 @@ struct IkuseiTabView: View {
             SwiftUIGIFPlayerView(gifName: "YAMAMITI")
             SwiftUIGIFPlayerView(gifName: "onigiri01")
                 .frame(width: 300, height: 300)
-            
-            OmusubiUIView()
+        
+            HyoukoUIView()
             Text(String(format:"%.2f",totalLocationPoint))
                 .font(.system(size: 22))
                 .fontWeight(.bold)
@@ -94,7 +94,8 @@ struct IkuseiTabView: View {
             LimitView()
             //ストックのおむすびボタンの表示
             StockButtonView()
-            
+            //育成中のおむすびのUI
+            IkuseiOmuUIView()
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .ignoresSafeArea()

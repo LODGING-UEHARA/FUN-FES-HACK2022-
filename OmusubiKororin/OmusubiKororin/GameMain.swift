@@ -37,6 +37,7 @@ struct GameMain: View {
                     Text("ランキング")
                 }.tag(3)
         }
+//        .tabViewStyle(.page)
         .accentColor(.black)
         
 //        .frame(maxHeight: screenSizeHeight)
