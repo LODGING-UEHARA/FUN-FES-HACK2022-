@@ -16,16 +16,13 @@ struct ContentView: View {
                 HStack(alignment: .bottom) {
                     //Image
                     Text("Title")
-                    }
                 }
             }
-            .navigationBarHidden(true)
-            .navigationBarBackButtonHidden(true)
         }
+        .navigationBarHidden(true)
+        .navigationBarBackButtonHidden(true)
+    }
 }
-
-
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

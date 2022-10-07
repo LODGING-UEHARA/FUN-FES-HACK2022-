@@ -10,7 +10,9 @@ import UIKit
 
 struct RankingTabView: View {
     var body: some View {
-        VStack {
+        ZStack {
+            Image("Haikei")
+                .resizable()
             Text("ランキング").font(.system(size: 50))
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
