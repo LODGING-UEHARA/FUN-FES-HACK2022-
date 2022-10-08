@@ -31,6 +31,7 @@
 		7F3F2A7828EAD17D00819A6E /* RankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3F2A7728EAD17D00819A6E /* RankingView.swift */; };
 		7F559E9428F00CA300A0086D /* onigiri01.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7F559E9328F00CA300A0086D /* onigiri01.gif */; };
 		7F559E9628F157CB00A0086D /* Ranking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F559E9528F157CB00A0086D /* Ranking.swift */; };
+		7F559E9828F1C63300A0086D /* battle_final.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7F559E9728F1C63300A0086D /* battle_final.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		7F3F2A7728EAD17D00819A6E /* RankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingView.swift; sourceTree = "<group>"; };
 		7F559E9328F00CA300A0086D /* onigiri01.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = onigiri01.gif; sourceTree = "<group>"; };
 		7F559E9528F157CB00A0086D /* Ranking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ranking.swift; sourceTree = "<group>"; };
+		7F559E9728F1C63300A0086D /* battle_final.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = battle_final.mp4; sourceTree = "<group>"; };
 		9B4FFBFD54DEFD4AD3078FF5 /* Pods_OmusubiKororin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OmusubiKororin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA5259862F9380CCFC4B6889 /* Pods-OmusubiKororin-OmusubiKororinUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmusubiKororin-OmusubiKororinUITests.release.xcconfig"; path = "Target Support Files/Pods-OmusubiKororin-OmusubiKororinUITests/Pods-OmusubiKororin-OmusubiKororinUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C2E9F8CE7BBF7EC92E6DE6CD /* Pods-OmusubiKororinTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmusubiKororinTests.debug.xcconfig"; path = "Target Support Files/Pods-OmusubiKororinTests/Pods-OmusubiKororinTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 		7F236E9D28EE01FA00391C8D /* GIF */ = {
 			isa = PBXGroup;
 			children = (
+				7F559E9728F1C63300A0086D /* battle_final.mp4 */,
 				7F559E9328F00CA300A0086D /* onigiri01.gif */,
 				7F236E9B28EDF03A00391C8D /* YAMAMITI.gif */,
 			);
@@ -361,6 +364,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F559E9428F00CA300A0086D /* onigiri01.gif in Resources */,
+				7F559E9828F1C63300A0086D /* battle_final.mp4 in Resources */,
 				7F3F2A4A28EAC3A700819A6E /* Preview Assets.xcassets in Resources */,
 				7F236E9C28EDF03A00391C8D /* YAMAMITI.gif in Resources */,
 				7F3F2A4728EAC3A700819A6E /* Assets.xcassets in Resources */,
@@ -664,7 +668,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"OmusubiKororin/Preview Content\"";
-				DEVELOPMENT_TEAM = QTD679H73U;
+				DEVELOPMENT_TEAM = YL3HFB4R6C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OmusubiKororin/Info.plist;
@@ -674,6 +678,7 @@
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				"IPHONEOS_DEPLOYMENT_TARGET[sdk=iphoneos*]" = 15.0;
@@ -682,7 +687,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kodataku130902.OmusubiKororin;
+				PRODUCT_BUNDLE_IDENTIFIER = masato130902.OmusubiKororin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -699,7 +704,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"OmusubiKororin/Preview Content\"";
-				DEVELOPMENT_TEAM = QTD679H73U;
+				DEVELOPMENT_TEAM = YL3HFB4R6C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OmusubiKororin/Info.plist;
@@ -709,6 +714,7 @@
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -716,7 +722,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kodataku130902.OmusubiKororin;
+				PRODUCT_BUNDLE_IDENTIFIER = masato130902.OmusubiKororin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

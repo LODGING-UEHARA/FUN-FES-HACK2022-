@@ -6,12 +6,5 @@
 	<array>
 		<string>location</string>
 	</array>
-	<key>UILaunchScreen</key>
-	<dict>
-		<key>UIImageName</key>
-		<string>UeharaChan1</string>
-		<key>UILaunchScreen</key>
-		<dict/>
-	</dict>
 </dict>
 </plist>

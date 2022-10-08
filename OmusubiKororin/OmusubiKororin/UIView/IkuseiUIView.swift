@@ -95,7 +95,7 @@ struct IkuseiTabView: View {
             //ストックのおむすびボタンの表示
             StockButtonView()
             //育成中のおむすびのUI
-            IkuseiOmuUIView()
+            IkuseiOmuUIView(d: $totalLocationPoint)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .ignoresSafeArea()

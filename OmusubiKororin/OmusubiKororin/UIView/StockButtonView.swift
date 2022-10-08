@@ -73,27 +73,12 @@ struct StockButtonView : View {
                 .resizable()
                 .frame(width: stockWH, height: stockWH)
                 .offset(x: stockX, y: stockY)
-//            Button(action: {
-//                withAnimation {
-//                    showingPopUp3 = true
-//                }
-//            }, label: {
-//                Image("OnigiriUI")
-//                    .resizable()
-//                    .frame(width: stockWH ,height: stockWH)
-//                    .cornerRadius(5)
-//            })
-//            .offset(x: stockX, y: stockY)
-            //ここまで
             
             if showingPopUp1 {
                 StockOmuPopupView(SisPresent: $showingPopUp1)
             }
             if showingPopUp2 {
                 StockOmuPopupView(SisPresent: $showingPopUp2)
-            }
-            if showingPopUp3 {
-                StockOmuPopupView(SisPresent: $showingPopUp3)
             }
         }
     }
@@ -103,7 +88,6 @@ struct StockOmuPopupView: View {
     @Binding var SisPresent: Bool
     public var RectW:CGFloat = 350
     public var RectH:CGFloat = 510
-
     public var allConerSize:CGFloat = 5
     
     var body: some View {
@@ -112,6 +96,10 @@ struct StockOmuPopupView: View {
                 .fill(Color.white)
                 .frame(width: RectW, height: RectH, alignment: .center)
                 .offset(y:60)
+            Image("onigiri00")
+                .resizable()
+                .frame(width: 150, height:150)
+                .offset(y:-70)
             Button {
                 print("捨てました")
             } label: {
@@ -132,3 +120,4 @@ struct StockOmuPopupView: View {
         }
     }
 }
+

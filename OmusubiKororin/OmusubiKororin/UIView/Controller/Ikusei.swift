@@ -29,6 +29,11 @@ public var TextX4:CGFloat = -15
 public var RectW:CGFloat = 240
 public var RectH:CGFloat = 70
 
+public var PopupImageX: CGFloat = 0
+public var PopupImageY: CGFloat = -70
+
+public var PopupStrY: CGFloat = 130
+
 public var allConerSize:CGFloat = 5
 
 
@@ -115,6 +120,7 @@ struct HyoukoUIView: View {
 
 struct IkuseiOmuUIView: View {
     @State var showingPopUp = false
+    @Binding var d: Double
     
     var body: some View {
         ZStack{
@@ -133,7 +139,7 @@ struct IkuseiOmuUIView: View {
             
             
             if showingPopUp {
-                IkuseiOmuPopupView(isPresent: $showingPopUp)
+                IkuseiOmuPopupView(isPresent: $showingPopUp, TotalLPoint: $d)
             }
         }
     }
@@ -141,6 +147,8 @@ struct IkuseiOmuUIView: View {
 
 struct IkuseiOmuPopupView: View {
     @Binding var isPresent: Bool
+    @Binding var TotalLPoint: Double
+    @State var deadCountStr = ""
     
     public var RectW:CGFloat = 350
     public var RectH:CGFloat = 510
@@ -153,6 +161,14 @@ struct IkuseiOmuPopupView: View {
                 .fill(Color.white)
                 .frame(width: RectW, height: RectH, alignment: .center)
                 .offset(y:60)
+            Image("onigiri00")
+                .resizable()
+                .frame(width: 150, height: 150)
+                .cornerRadius(allConerSize)
+                .offset(x: PopupImageX, y: PopupImageY)
+            
+            Text("エネルギー     " + String(format:"%.2f", TotalLPoint)).font(.system(size: 30))
+                .offset(x: -40, y: PopupStrY)
             Button {
                 print("育成完了")
             } label: {
