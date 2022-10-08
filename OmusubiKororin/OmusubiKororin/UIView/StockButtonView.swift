@@ -9,9 +9,8 @@ import Foundation
 import SwiftUI
 
 struct StockButtonView : View {
-    @State var showingPopUp1 = false
-    @State var showingPopUp2 = false
-    @State var showingPopUp3 = false
+    @State var showingPopUp1 = 1
+    @State var showingPopUp2 = 3
     
     public var stockX:CGFloat = 120
     public var stockY:CGFloat = 250
@@ -29,7 +28,7 @@ struct StockButtonView : View {
                 .offset(x: -stockX, y: stockY)
             Button(action: {
                 withAnimation {
-                    showingPopUp1 = true
+                    showingPopUp1 += 1
                 }
             }, label: {
                 ZStack{
@@ -52,7 +51,7 @@ struct StockButtonView : View {
                 .offset(x: 0*stockX, y: stockY)
             Button(action: {
                 withAnimation {
-                    showingPopUp2 = true
+                    showingPopUp2 += 1
                 }
             }, label: {
                 ZStack{
@@ -74,10 +73,10 @@ struct StockButtonView : View {
                 .frame(width: stockWH, height: stockWH)
                 .offset(x: stockX, y: stockY)
             
-            if showingPopUp1 {
+            if showingPopUp1 == 2  {
                 StockOmuPopupView(SisPresent: $showingPopUp1)
             }
-            if showingPopUp2 {
+            if showingPopUp2 == 4 {
                 StockOmuPopupView(SisPresent: $showingPopUp2)
             }
         }
@@ -85,7 +84,7 @@ struct StockButtonView : View {
 }
 
 struct StockOmuPopupView: View {
-    @Binding var SisPresent: Bool
+    @Binding var SisPresent: Int
     public var RectW:CGFloat = 350
     public var RectH:CGFloat = 510
     public var allConerSize:CGFloat = 5
@@ -96,6 +95,43 @@ struct StockOmuPopupView: View {
                 .fill(Color.white)
                 .frame(width: RectW, height: RectH, alignment: .center)
                 .offset(y:60)
+            if SisPresent == 2 {
+                Image("tunamayo")
+                    .resizable()
+                    .frame(width: 60, height:60)
+                    .offset(x:-120, y:-130)
+                Image("tunamayo")
+                    .resizable()
+                    .frame(width: 45, height:45)
+                    .offset(x:120, y:80)
+                Text("おにぎりの具")
+                    .font(.system(size: 24))
+                    .offset(x:-70, y:80)
+                Text("エネルギー")
+                    .font(.system(size: 24))
+                    .offset(x:-81, y:150)
+                Text("9162　cal")
+                    .font(.system(size: 24))
+                    .offset(x:90,y:150)
+            } else if SisPresent == 4 {
+                Image("ume")
+                    .resizable()
+                    .frame(width: 60, height:60)
+                    .offset(x:-120, y:-130)
+                Image("ume")
+                    .resizable()
+                    .frame(width: 45, height:45)
+                    .offset(x:120, y:80)
+                Text("おにぎりの具")
+                    .font(.system(size: 24))
+                    .offset(x:-70, y:80)
+                Text("エネルギー")
+                    .font(.system(size: 24))
+                    .offset(x:-81, y:150)
+                Text("530000　cal")
+                    .font(.system(size: 24))
+                    .offset(x:90,y:150)
+            }
             Image("onigiri00")
                 .resizable()
                 .frame(width: 150, height:150)
@@ -110,7 +146,7 @@ struct StockOmuPopupView: View {
             
             Button(action: {
                 withAnimation {
-                    SisPresent = false
+                    SisPresent = SisPresent - 1
                 }
             }, label: {
                 Text("×")

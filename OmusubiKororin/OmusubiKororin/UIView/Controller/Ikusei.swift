@@ -166,9 +166,15 @@ struct IkuseiOmuPopupView: View {
                 .frame(width: 150, height: 150)
                 .cornerRadius(allConerSize)
                 .offset(x: PopupImageX, y: PopupImageY)
-            
-            Text("エネルギー     " + String(format:"%.2f", TotalLPoint)).font(.system(size: 30))
-                .offset(x: -40, y: PopupStrY)
+            Text("推定エネルギー")
+                .font(.system(size: 24))
+                .offset(x: -75, y: PopupStrY)
+            Text(String(format:"%.1f", TotalLPoint*100))
+                .font(.system(size: 24))
+                .offset(x: 85, y: PopupStrY)
+            Text("cal")
+                .font(.system(size: 24))
+                .offset(x:150, y: PopupStrY)
             Button {
                 print("育成完了")
             } label: {

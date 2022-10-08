@@ -60,7 +60,7 @@ struct BattleSecondView: View {
                         player.pause()
                         showingMovie = false
                     }) {
-                        Text("⬅️")
+                        Text("⬅︎")
                             .font(.system(size: 70, weight: .medium))
                             .padding(.bottom)
                             .frame(width: 70, height: 50)
