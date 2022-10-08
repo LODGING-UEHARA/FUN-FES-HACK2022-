@@ -11,7 +11,7 @@ import UIKit
 public var OlimitX:CGFloat = 55
 public var OlimitY:CGFloat = -240
 
-public var limitX:CGFloat = 55
+public var limitX:CGFloat = 75
 public var limitY:CGFloat = -240
 
 public var OIkuseiX:CGFloat = -125
@@ -31,11 +31,16 @@ public var RectH:CGFloat = 70
 
 public var allConerSize:CGFloat = 5
 
+
+
+
 struct LimitView: View {
     let timer = Timer.publish(every: 86400.0, on: .main, in: .common).autoconnect()
     @State var deadDayCount = 3
     @State var finishText:String? = nil
     
+    @State var deadHoursCount = 24
+    @State var deadDayCountStr: String = "　　3   　日"
     var body: some View {
         ZStack{
             //消費期限の表示
@@ -44,13 +49,33 @@ struct LimitView: View {
                 .frame(width: RectW, height: RectH)
                 .offset(x:OlimitX, y: OlimitY)
             
-            Text((finishText) ?? "\(deadDayCount)")
+            Text(deadDayCountStr)
                 .fontWeight(.bold)
                 .onReceive(timer, perform: { _ in
-                    if deadDayCount == 0 {
-                        finishText = "腐にぎり化"
-                    }else{
+                    if ((deadDayCount == 3 || deadDayCount == 2) && deadHoursCount > 0){
+                        deadDayCountStr = (String(deadDayCount) + "   　  日")
+                        deadHoursCount -= 1
+                        
+                    }else if ((deadDayCount == 3 || deadDayCount == 2) && deadHoursCount == 0){
+                        deadDayCountStr = (String(deadDayCount) + "   　  日")
                         deadDayCount -= 1
+                        deadHoursCount = 24
+                        
+                    }else if deadDayCount == 1 && deadHoursCount == 24{
+                        //1dayを24hoursへ変更
+                        deadDayCount += 23
+                        deadDayCountStr = (String(deadDayCount) + "   　時間")
+                        deadHoursCount = -1
+                        
+                    }else if deadDayCount > 1 && deadHoursCount == -1{
+                        deadDayCount -= 1
+                        deadDayCountStr = (String(deadDayCount) + "   　時間")
+                        print(deadHoursCount)
+                        // deadHoursCount -= 1
+                        //deadDayCountStr = (String(deadDayCount) + " Hours")
+                        
+                    }else if deadDayCount == 1 && deadHoursCount == -1{
+                        deadDayCountStr = "腐にぎり化"
                     }
                 })
                 .font(.system(size: 30))
@@ -99,13 +124,12 @@ struct IkuseiOmuUIView: View {
                     showingPopUp = true
                 }
             }, label: {
-                Image("onigiri00")
+                Image("OnigiriUI")
                     .resizable()
-                    .background(Color(red: 0.55, green: 0.799, blue: 0.978))
                     .frame(width: OIkuseiWH, height: OIkuseiWH)
                     .cornerRadius(allConerSize)
             })
-                .offset(x: OIkuseiX, y: OIkuseiY)
+            .offset(x: OIkuseiX, y: OIkuseiY)
             
             
             if showingPopUp {
@@ -119,8 +143,8 @@ struct IkuseiOmuPopupView: View {
     @Binding var isPresent: Bool
     
     public var RectW:CGFloat = 350
-    public var RectH:CGFloat = 600
-
+    public var RectH:CGFloat = 510
+    
     public var allConerSize:CGFloat = 5
     
     var body: some View {
@@ -128,18 +152,25 @@ struct IkuseiOmuPopupView: View {
             RoundedRectangle(cornerSize: .init(width: allConerSize, height: allConerSize))
                 .fill(Color.white)
                 .frame(width: RectW, height: RectH, alignment: .center)
-                .offset(y:105)
+                .offset(y:60)
+            Button {
+                print("育成完了")
+            } label: {
+                Image("IkuseiFin")
+                
+            }
+            .offset(y:260)
             Button(action: {
                 withAnimation {
                     isPresent = false
                 }
             }, label: {
-                Text("Close")
+                Text("×")
+                    .font(.system(size: 50))
+                
             })
+            .offset(x:140, y:-160)
         }
-//        .frame(width: 280, height: 430, alignment: .center)
-        .padding()
-//        .background(Color.white)
-        .cornerRadius(12)
+        
     }
 }

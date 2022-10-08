@@ -16,7 +16,6 @@
 		7F236E5828EC038E00391C8D /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F236E5728EC038E00391C8D /* ErrorView.swift */; };
 		7F236E5E28ED35A500391C8D /* GifImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F236E5D28ED35A500391C8D /* GifImage.swift */; };
 		7F236E9C28EDF03A00391C8D /* YAMAMITI.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7F236E9B28EDF03A00391C8D /* YAMAMITI.gif */; };
-		7F236EA028EE030E00391C8D /* onigiri01.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7F236E9F28EE030E00391C8D /* onigiri01.gif */; };
 		7F236EA228EE6E1800391C8D /* StockButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F236EA128EE6E1800391C8D /* StockButtonView.swift */; };
 		7F3F2A4328EAC3A600819A6E /* OmusubiKororinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3F2A4228EAC3A600819A6E /* OmusubiKororinApp.swift */; };
 		7F3F2A4528EAC3A600819A6E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3F2A4428EAC3A600819A6E /* ContentView.swift */; };
@@ -30,6 +29,8 @@
 		7F3F2A7128EACC1600819A6E /* BattleUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3F2A7028EACC1600819A6E /* BattleUIView.swift */; };
 		7F3F2A7328EACC2400819A6E /* IkuseiUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3F2A7228EACC2400819A6E /* IkuseiUIView.swift */; };
 		7F3F2A7828EAD17D00819A6E /* RankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3F2A7728EAD17D00819A6E /* RankingView.swift */; };
+		7F559E9428F00CA300A0086D /* onigiri01.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7F559E9328F00CA300A0086D /* onigiri01.gif */; };
+		7F559E9628F157CB00A0086D /* Ranking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F559E9528F157CB00A0086D /* Ranking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +63,6 @@
 		7F236E5728EC038E00391C8D /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		7F236E5D28ED35A500391C8D /* GifImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifImage.swift; sourceTree = "<group>"; };
 		7F236E9B28EDF03A00391C8D /* YAMAMITI.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = YAMAMITI.gif; sourceTree = "<group>"; };
-		7F236E9F28EE030E00391C8D /* onigiri01.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = onigiri01.gif; path = ../../../../../onigiri01.gif; sourceTree = "<group>"; };
 		7F236EA128EE6E1800391C8D /* StockButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockButtonView.swift; sourceTree = "<group>"; };
 		7F3F2A3F28EAC3A600819A6E /* OmusubiKororin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OmusubiKororin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F3F2A4228EAC3A600819A6E /* OmusubiKororinApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmusubiKororinApp.swift; sourceTree = "<group>"; };
@@ -79,6 +79,8 @@
 		7F3F2A7028EACC1600819A6E /* BattleUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleUIView.swift; sourceTree = "<group>"; };
 		7F3F2A7228EACC2400819A6E /* IkuseiUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IkuseiUIView.swift; sourceTree = "<group>"; tabWidth = 4; };
 		7F3F2A7728EAD17D00819A6E /* RankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingView.swift; sourceTree = "<group>"; };
+		7F559E9328F00CA300A0086D /* onigiri01.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = onigiri01.gif; sourceTree = "<group>"; };
+		7F559E9528F157CB00A0086D /* Ranking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ranking.swift; sourceTree = "<group>"; };
 		9B4FFBFD54DEFD4AD3078FF5 /* Pods_OmusubiKororin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OmusubiKororin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA5259862F9380CCFC4B6889 /* Pods-OmusubiKororin-OmusubiKororinUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmusubiKororin-OmusubiKororinUITests.release.xcconfig"; path = "Target Support Files/Pods-OmusubiKororin-OmusubiKororinUITests/Pods-OmusubiKororin-OmusubiKororinUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C2E9F8CE7BBF7EC92E6DE6CD /* Pods-OmusubiKororinTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmusubiKororinTests.debug.xcconfig"; path = "Target Support Files/Pods-OmusubiKororinTests/Pods-OmusubiKororinTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -147,7 +149,7 @@
 		7F236E9D28EE01FA00391C8D /* GIF */ = {
 			isa = PBXGroup;
 			children = (
-				7F236E9F28EE030E00391C8D /* onigiri01.gif */,
+				7F559E9328F00CA300A0086D /* onigiri01.gif */,
 				7F236E9B28EDF03A00391C8D /* YAMAMITI.gif */,
 			);
 			path = GIF;
@@ -244,6 +246,7 @@
 			children = (
 				7F3F2A6C28EACBF600819A6E /* Ikusei.swift */,
 				7F3F2A6E28EACC0000819A6E /* Battle.swift */,
+				7F559E9528F157CB00A0086D /* Ranking.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -357,10 +360,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F559E9428F00CA300A0086D /* onigiri01.gif in Resources */,
 				7F3F2A4A28EAC3A700819A6E /* Preview Assets.xcassets in Resources */,
 				7F236E9C28EDF03A00391C8D /* YAMAMITI.gif in Resources */,
 				7F3F2A4728EAC3A700819A6E /* Assets.xcassets in Resources */,
-				7F236EA028EE030E00391C8D /* onigiri01.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +501,7 @@
 				7F3F2A7128EACC1600819A6E /* BattleUIView.swift in Sources */,
 				7F3F2A6D28EACBF600819A6E /* Ikusei.swift in Sources */,
 				7F236EA228EE6E1800391C8D /* StockButtonView.swift in Sources */,
+				7F559E9628F157CB00A0086D /* Ranking.swift in Sources */,
 				7F236E5128EBFAF000391C8D /* LocationViewModel.swift in Sources */,
 				7F3F2A6F28EACC0000819A6E /* Battle.swift in Sources */,
 				7F236E5828EC038E00391C8D /* ErrorView.swift in Sources */,
@@ -664,6 +668,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OmusubiKororin/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "オムクラ";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -697,6 +703,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OmusubiKororin/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "オムクラ";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

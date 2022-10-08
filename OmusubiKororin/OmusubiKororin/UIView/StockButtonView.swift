@@ -22,44 +22,68 @@ struct StockButtonView : View {
         //ここから手持ちのおむすびボタン3つ
         ZStack{
             
+            //1
+            Image("OmuUIBack")
+                .resizable()
+                .frame(width: stockWH, height: stockWH)
+                .offset(x: -stockX, y: stockY)
             Button(action: {
                 withAnimation {
                     showingPopUp1 = true
                 }
             }, label: {
-                Image("onigiri00")
-                    .resizable()
-                    .background(Color(red: 0.55, green: 0.799, blue: 0.978))
-                    .frame(width: stockWH, height: stockWH)
-                    .cornerRadius(allConerSize)
+                ZStack{
+                    Image("OnigiriUI")
+                        .resizable()
+                        .frame(width: stockWH, height: stockWH)
+                        .cornerRadius(allConerSize)
+                    Image("tunamayo")
+                        .resizable()
+                        .frame(width: 30,height: 30)
+                        .offset(x:30,y:-33)
+                }
             })
             .offset(x: -stockX, y: stockY)
             
+            //2
+            Image("OmuUIBack")
+                .resizable()
+                .frame(width: stockWH, height: stockWH)
+                .offset(x: 0*stockX, y: stockY)
             Button(action: {
                 withAnimation {
                     showingPopUp2 = true
                 }
             }, label: {
-                Image("onigiri00")
-                    .resizable()
-                    .background(Color(red: 0.55, green: 0.799, blue: 0.978))
-                    .frame(width:stockWH, height:stockWH)
-                    .cornerRadius(allConerSize)
+                ZStack{
+                    Image("OnigiriUI")
+                        .resizable()
+                        .frame(width:stockWH, height:stockWH)
+                        .cornerRadius(allConerSize)
+                    Image("ume")
+                        .resizable()
+                        .frame(width: 30,height: 30)
+                        .offset(x:30,y:-33)
+                }
             })
             .offset(x: 0*stockX, y: stockY)
             
-            Button(action: {
-                withAnimation {
-                    showingPopUp3 = true
-                }
-            }, label: {
-                Image("onigiri00")
-                    .resizable()
-                    .background(Color(red: 0.55, green: 0.799, blue: 0.978))
-                    .frame(width: stockWH ,height: stockWH)
-                    .cornerRadius(5)
-            })
-            .offset(x: stockX, y: stockY)
+            //3
+            Image("OmuUIBack")
+                .resizable()
+                .frame(width: stockWH, height: stockWH)
+                .offset(x: stockX, y: stockY)
+//            Button(action: {
+//                withAnimation {
+//                    showingPopUp3 = true
+//                }
+//            }, label: {
+//                Image("OnigiriUI")
+//                    .resizable()
+//                    .frame(width: stockWH ,height: stockWH)
+//                    .cornerRadius(5)
+//            })
+//            .offset(x: stockX, y: stockY)
             //ここまで
             
             if showingPopUp1 {
@@ -88,17 +112,23 @@ struct StockOmuPopupView: View {
                 .fill(Color.white)
                 .frame(width: RectW, height: RectH, alignment: .center)
                 .offset(y:60)
+            Button {
+                print("捨てました")
+            } label: {
+                Image("StockTra")
+                    
+            }
+            .offset(y:260)
+            
             Button(action: {
                 withAnimation {
                     SisPresent = false
                 }
             }, label: {
-                Text("Close")
+                Text("×")
+                    .font(.system(size: 50))
             })
-//            .frame(width: 280, height: 430, alignment: .center)
-            .padding()
-//            .background(Color.white)//
-//            .cornerRadius(12)
+            .offset(x:140, y:-160)
         }
     }
 }
